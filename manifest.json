@@ -1,0 +1,17 @@
+{
+  "name": "Remove the annoying banner on thegigabrain.com",
+  "description": "thegigabrain.com reminds us of installing their (indeed great) chrome extension. The problem is: even if you actually install the extension (like I have done), there is no way to hide that banner. Oh wait, now there is :)",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.thegigabrain.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "permissions": []
+}
